@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Lexend Deca;
+    src: url("./../font/LexendDeca-Regular.ttf");
+}
+
+@font-face {
+    font-family: Big Shoulders Display;
+    src: url("./../font/BigShouldersDisplay-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lexend Deca;
+    font-size: 15px;
+}
+
+body {
+    font-style: normal;
+    line-height: 25px;
+    color: #fff;
+}
+
+.center {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    width: 920px;
+    margin: auto 0;
+}
+
+@media screen and (max-width: 930px) {
+    .container {
+        flex-direction: column;
+        width: 327px;
+        margin: 88px 0;
+    }
+}
+
+.card {
+    padding: 48px;
+}
+
+.orange {
+    background-color: hsl(31, 77%, 52%)
+}
+
+.cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.dark_cyan {
+    background-color: hsl(179, 100%, 13%);
+}
+
+img {
+    margin-bottom: 36px;
+}
+
+h2 {
+    font-family: Big Shoulders Display;
+    margin-bottom: 24px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 84px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+input{
+    color: black;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 25px;
+    mix-blend-mode: lighten;
+    padding: 12px 32px;
+}
+
+input:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
